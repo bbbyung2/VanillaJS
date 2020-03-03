@@ -1,9 +1,19 @@
 const title = document.getElementById('title');
 
-console.log(title)
+// console.log(title)
+//
+// title.innerHTML = 'H! from JS';
+//
+// title.style.color = 'red';
+//
+// document.title = 'hello JS';
 
-title.innerHTML = 'H! from JS';
+// function handleResize(event){
+//     console.log(event);
+// }
 
-title.style.color = 'red';
+function handleClick(){
+    title.style.color = 'red';
+}
 
-document.title = 'hello JS';
+title.addEventListener("click", handleClick)
